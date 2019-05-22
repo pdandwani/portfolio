@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paras</title>
+        <link rel = "icon" type = "image/png" href = "logo.png">
+        <link rel= "stylesheet" type="text/css" href="style.css">
+        <script>
+            let i=0;
+            let p=document.getElementById("pic");
+            let images = [];
+            images[0] = "self.jpg";
+            images[1] = "momDad.jpg";
+            images[2] = "frnds1.jpg";
+            images[3] = "frnds2.jpg";
+            function change(var){
+                i=i+var;
+                if(i>image.length())
+                    i=0;
+                else if(i<0)
+                    i=4;
+                p.appendChild(image[i]);
+            } 
+        </script>
+    </head>
+    <body>
+        <h1 id="heading">Paras Dandwani</h1>
+        <div id="pics">
+            
+            <a class="prev" onclick=change(-1)>&#10094;</a>
+            <div id="pic">
+                <img src="self.jpg">
+            </div>
+            
+            <a class="next" onclick=change(1)>&#10095;</a>
+             
+         </div>
+          <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot" ></span> 
+                <span class="dot" ></span>
+          </div>        
+        <div id="school">
+            <div id="one">
+                <img src="sjcs.png" id="sjcs">
+                <div class="grade">
+                    <h1>10<sup>th</sup> : 10 CGPA(2015-16)</h1>
+                    <h1>12<sup>th</sup> : 91.5% (2017-18)</h1>
+                </div>
+            </div>
+            <div id="two">
+                    <img src="manit.png" id="mact">
+                    <div class="grade1">
+                        <h1 align=center>MSME</h1>
+                        <p>1st Semester : 8.72
+                        </p>
+                    </div>
+                    
+            </div>
+
+        </div>
+        <div id="certi">
+                <div id="one">
+                      <img src="jetking.png" style="margin-left: 42%;margin-top:5%;">  
+                </div>
+                <div id="two">
+                        <h1 align="center">Certified Hardware Expert
+                        </h1> 
+                </div>
+        </div>
+        <div id="lang">
+                <div id="one">
+                      <img src="c.png" style="margin-left:30%;height:92%;width:22%;float:left;"> 
+                      <img src="cpp.png" style="margin-top:1%;height:85%;width:18%;float:left;"> 
+                </div>
+                <div id="two">
+                        <img src="html.png" style="margin-left:7%;margin-top:1%;height:88%;width:20%; float:left;"> 
+                        <img src="css.png" style="margin:1%;height:88%;width:20%; float:left;">
+                         <img src="js.png" style="margin:1%;height:88%;width:20%; float:left;"> 
+                        <img src="sql.png" style="margin:1%;height:88%;width:20%; float:left;">      
+                </div>
+                            
+        </div>
+        <div id="achNpart">
+                <div id="projects">
+                        <h1 style="text-align:center;">Projects</h1>
+                        <ul>
+                             <li>
+                                 <h2>
+                                    Completed
+                                    <h3><ul type="square">
+                                        <li>My portfolio</li>
+                                        <li>Cow health monitoring using arduino, ESP8266, ADSL-335</li>
+                                    </ul>
+                                    </h3>
+                                 </h2>
+                            </li>  
+                             <li>
+                                 <h2>
+                                    Ongoing
+                                    <h3><ul type="square">
+                                            <li>Web developer at Peddlars-bicycle rental</li>
+                                            <li>Web developer at Matthix-Maths for all</li>
+                                            <li>RGB led strip controller using bluetooth and arduino</li>
+                                            <li>Competitive coding at its best</li>
+                                        </ul>
+                                        </h3>
+                             </h2></li> 
+                        </ul>
+                    </div> 
+             <div id="achievements">
+                    <h1 style="text-align:center;">Achievements</h1>
+                    <ul>
+                        <h2>
+                            <li>Winner at Code Kreigers - NIT-B</li>
+                            <li>Gold medallist in French olympiad-2017</li>
+                            <li>Bronze medallist in French olympiad-2016</li>
+                        </h2>
+                    </ul>
+             </div>  
+          
+             <div id="participations">
+                    <h1 style="text-align:center;">Participations</h1>
+                    <ul>
+                            <h2>
+                                <li>Seminar on Open source projects :  NIT-B</li>
+                                <li>Workshop on Competitive coding : NIT-B</li>
+                                <li>Workshop on Manual bots : NIT-B</li>
+                                <li>Workshop on WebDevelopment : NIIT-Bhopal</li>
+                            </h2>
+                    </ul>
+             </div>
+             
+        </div>
+        <div id="int">
+            <div id="int1">
+                <div>
+                    <img src="cycle.jpg" style="height:80%;width:auto;">
+                    <h1>Cycling</h1>
+                </div>
+            
+            
+                <div>
+
+                    <img src="coder.jpg" style="height:80%;width:auto;">
+                    <h1>Coding</h1>
+                </div>
+            </div>
+            <div id="int1">
+                <div>
+                    <img src="gym.jpg" style="height:80%;width:auto;">
+                    <h1>Gyming</h1>
+                </div>
+            
+                <div>
+                    <img src="guitar.jpg" style="height:80%;width:auto;">
+                    <h1>Guitar
+                        
+                        </h1>
+                </div>
+            </div>
+        </div>
+        <div id="address">
+            <img src="home.png" style="height:45%;width:25%;margin-top:2%;float:left">
+            <div style="float:left;height:45%;width:50%;padding-top:25px;text-align:center;margin-top:2%;">
+                <h2>Idgah hills</h2>
+                <h2>Bhopal-462001</h2>
+            </div>
+            <br>
+            <img src="lang.png" style="height:45%;width:25%;margin-bottom:2%;float:right;margin-right:2%">
+            <div style="float:right;height:45%;width:50%;padding-top:25px;text-align:center;margin-top:2%;">
+                    <h2>Sindhi</h2>
+                    <h2>Hindi</h2>
+                    <h2>English</h2>
+                    <h2>French</h2>
+                </div>
+        </div>
+        <div id="footer">
+            <h2>@pdandwani</h2>
+            <div><img src="fb.png" ></div>
+            <div><img src="quora.png" ></div>
+            <div><img src="github.png" ></div>
+            <div><img src="mail.png" ></div>
+        </div>
+    </body>
+</html>

@@ -1,3 +1,4 @@
+/*<link rel= "stylesheet" type="text/css" href="style.css">*/
 img{
     height:auto;
     width:auto;
@@ -13,20 +14,21 @@ img{
     padding-left:1%;
     z-index:10; 
     opacity:0.5;
-    background-attachment: fixed;          
+              
 }
 
 
-#pics{
+#container{
     /*opacity:0.3;*/
     height:100vh;
     width:100%;
-    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.4)),url("self.jpg");
+    /*background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.4)),url("self.jpg");*/
     background-size:100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
-#pics img{
+#container img{
+    height:75%;
     width:50%;
     opacity:1;
     border: 3px solid black;
@@ -34,15 +36,20 @@ img{
     left:25%;
     position:absolute;
 }
+.pics{
+    display:block;
+    
+
+}
 #school{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url("book.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    
 }
 #one, #two{
-    height:50%;
+    height:49%;
     width:auto;
     
 }
@@ -75,14 +82,14 @@ img{
     width: 100%;
     background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url("hardware.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    
 }
 #lang{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url("compcode.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    
 }
 #lang img{
     margin:auto;
@@ -116,39 +123,27 @@ img{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.5);
 }
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color:black;
-    border-radius: 50%;
-    display:inline-block ;
-    
-}
-.dot:hover{
-    background-color: black;
-}
+
 #achNpart{
     width:100%;
     height:100vh;
     background-image:linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url("achievement.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    
 }
 #int{
     width:100%;
     height:100vh;
     background-image:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)),url("interests.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    padding:1%;
 } 
 #int1{
     
     width:100%;
     height:49%;
     float:left;
-    background-attachment: fixed;
+    
 }
 #int1 div{
    width:49.5%;
@@ -166,33 +161,32 @@ border: 3px solid black;
 
 }
 #achievements{
-   width:48%;
-   height:48%;
-   
-   line-height:200%
+   width:100%;
+   height:50%;
+  /* line-height:200%;*/
+  font-size:18px;
 }
 #projects{
-   height:98%;
+   height:100%;
    width:49%;
    float:right;
-   
-   letter-spacing:2px;
-   word-spacing:2px;
+   font-size:20px;
+   letter-spacing:1.5px;
+   word-spacing:1.5px;
    line-height:150%;
 }
 #participations{
    margin-top:0.5%;
-    width:48%;
-   height:48%;
-  
-   line-height:200%
+    width:100%;
+    font-size:18px;
+   /*line-height:200%*/
 }
 #address{
     width:100%;
     height:100vh;
     background-image:linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url("add.jpg");
     background-size:100% 100%;
-    background-attachment: fixed;
+    
 }
 
 #footer{

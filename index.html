@@ -3,42 +3,29 @@
     <head>
         <title>Paras</title>
         <link rel = "icon" type = "image/png" href = "logo.png">
-        <link rel= "stylesheet" type="text/css" href="style.css">
-        <script>
-            let i=0;
-            let p=document.getElementById("pic");
-            let images = [];
-            images[0] = "self.jpg";
-            images[1] = "momDad.jpg";
-            images[2] = "frnds1.jpg";
-            images[3] = "frnds2.jpg";
-            function change(var){
-                i=i+var;
-                if(i>image.length())
-                    i=0;
-                else if(i<0)
-                    i=4;
-                p.appendChild(image[i]);
-            } 
-        </script>
+        <link rel= "stylesheet" type="text/css" href="style.css">   
     </head>
     <body>
         <h1 id="heading">Paras Dandwani</h1>
-        <div id="pics">
-            
-            <a class="prev" onclick=change(-1)>&#10094;</a>
-            <div id="pic">
+        
+        <div id="container">
+            <a class="prev" onclick="change(-1)">&#10094;</a>
+            <div class="pics">
                 <img src="self.jpg">
             </div>
+            <div class="pics">
+                <img src="momDad.jpg">
+            </div>
+            <div class="pics">
+                <img src="frnds1.jpg">
+            </div>
+            <div class="pics">
+                <img src="frnds2.jpg">
+            </div>
             
-            <a class="next" onclick=change(1)>&#10095;</a>
+            <a class="next" onclick="change(1)">&#10095;</a>
              
-         </div>
-          <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot" ></span> 
-                <span class="dot" ></span>
-          </div>        
+        </div>       
         <div id="school">
             <div id="one">
                 <img src="sjcs.png" id="sjcs">
@@ -51,8 +38,8 @@
                     <img src="manit.png" id="mact">
                     <div class="grade1">
                         <h1 align=center>MSME</h1>
-                        <p>1st Semester : 8.72
-                        </p>
+                        <h2>1st Semester : 8.72
+                        </h2>
                     </div>
                     
             </div>
@@ -67,16 +54,27 @@
                         </h1> 
                 </div>
         </div>
+        <div id="certi">
+                <div id="one">
+                      <img src="niit.png" style="margin-left: 35%;margin-top:5%;width:30%;height:55%">  
+                </div>
+                <div id="two">
+                        <h1 align="center">Certified in C
+                        </h1> 
+                        <h1 align="center">Certified in C++
+                            </h1> 
+                </div>
+        </div>
         <div id="lang">
                 <div id="one">
                       <img src="c.png" style="margin-left:30%;height:92%;width:22%;float:left;"> 
                       <img src="cpp.png" style="margin-top:1%;height:85%;width:18%;float:left;"> 
                 </div>
                 <div id="two">
-                        <img src="html.png" style="margin-left:7%;margin-top:1%;height:88%;width:20%; float:left;"> 
-                        <img src="css.png" style="margin:1%;height:88%;width:20%; float:left;">
-                         <img src="js.png" style="margin:1%;height:88%;width:20%; float:left;"> 
-                        <img src="sql.png" style="margin:1%;height:88%;width:20%; float:left;">      
+                        <img src="html.png" style="margin-left:7%;margin-top:1%;height:85%;width:20%; float:left;"> 
+                        <img src="css.png" style="margin:1%;height:85%;width:20%; float:left;">
+                         <img src="js.png" style="margin:1%;height:85%;width:20%; float:left;"> 
+                        <img src="sql.png" style="margin:1%;height:85%;width:20%; float:left;">      
                 </div>
                             
         </div>
@@ -106,7 +104,8 @@
                                         </h3>
                              </h2></li> 
                         </ul>
-                    </div> 
+                    </div>
+             <div id="projects"> 
              <div id="achievements">
                     <h1 style="text-align:center;">Achievements</h1>
                     <ul>
@@ -116,8 +115,7 @@
                             <li>Bronze medallist in French olympiad-2016</li>
                         </h2>
                     </ul>
-             </div>  
-          
+             </div> 
              <div id="participations">
                     <h1 style="text-align:center;">Participations</h1>
                     <ul>
@@ -129,7 +127,7 @@
                             </h2>
                     </ul>
              </div>
-             
+             </div>
         </div>
         <div id="int">
             <div id="int1">
@@ -180,6 +178,39 @@
             <div><img src="quora.png" ></div>
             <div><img src="github.png" ></div>
             <div><img src="mail.png" ></div>
+
         </div>
+        <script>
+            var index=0;
+            var pics=document.getElementsByClassName("pics");
+            var cont=document.getElementById("container");
+            var i=0;
+            show(index);
+            function change(n){
+                show(index=index+n);
+            }
+            function show(n){
+                 if(n>=pics.length)
+                  {  index=0}
+                if(n<0)
+                   { index=pics.length-1}
+                for(i=0;i<pics.length;i++)
+                {    pics[i].style.display= "none";
+                    
+                }
+                pics[index].style.display= "block";
+                if(index==0)
+                    cont.style.backgroundImage = "linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url('self.jpg')";
+                else if(index==1)
+                    cont.style.backgroundImage = "linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url('momDad.jpg')";
+                else if(index==2)
+                    cont.style.backgroundImage = "linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url('frnds1.jpg')";
+                else if(index==3)
+                    cont.style.backgroundImage = "linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url('frnds2.jpg')";
+                
+                pics[index].style.display= "block";
+                
+            }
+        </script>
     </body>
 </html>
